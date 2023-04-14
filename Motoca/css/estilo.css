@@ -1,0 +1,83 @@
+#container{
+    padding: 10%;
+}
+
+#cabecalho{
+    background-color: black;
+    
+}
+
+.logo{
+    background-image: url('../img/imagensB.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -50px;
+    height: 10vh;
+}
+
+#banner{
+    background-image: url('../img/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 290px;
+}
+
+h2{
+    margin: 1% 0 1% 0;
+}
+
+.listaProduto{
+    border: 1px solid black;
+    width: 221px;
+    padding: 1%;
+}
+
+.listaProduto p:nth-child(3){
+    color: red;
+    text-align: end;
+}
+
+.listaProduto p:nth-child(2){
+    color: gray;
+    text-align: start;
+}
+
+.conjutoProduto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto{
+    height: 290px;
+    width: 210px;
+}
+
+.imgProduto{
+    background-image: url('../img/imagensA.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: cover; */
+    background-size: 54vw;
+}
+
+.pos-1{
+    background-position: 14px 32px;
+}
+
+.pos-2{
+    background-position: -193px 32px;
+}
+
+.pos-3{
+    background-position: -426px 32px;
+}
+
+.pos-4{
+    background-position: -631px 32px;
+}
+
+.materias{
+    display: flex;
+}
