@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes de estado</title>
+
+    <style>
+        a::before{
+            content: '[';
+        }
+
+        a::after{
+            content: ']';
+        }
+
+        a.xxx::after{
+            content: '(externo)';
+        }
+
+        ol{
+            list-style: none;
+            counter-reset: contador;
+        }
+
+        li::before{
+            content: "link " counter(contador) " ";
+            counter-increment: contador;
+        }
+
+        .email::before{
+            content: "Meu email é: ";
+        }
+    </style>
+</head>
+
+<body>
+   <h1>Pseudo-elementos</h1>
+
+   <a href="#" target="_blank"">Link 1</a><br>
+   <a href="#" target="_blank"">Link 2</a><br>
+   <a href="#" target="_blank"">Link 3</a><br>
+   <a href="#" target="_blank"">Link 4</a><br>
+
+   <br>
+   <a class="xxx" href="http://www.oul.com.br">oul</a>
+
+   <hr>
+   <ul >
+    <li class="email">skaique833@gmail.com</li>
+   </ul>
+
+   <hr>
+   <ol>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>F</li>
+   </ol>
+</body>
+
+</html>
