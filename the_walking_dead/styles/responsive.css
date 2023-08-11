@@ -1,0 +1,61 @@
+
+@media screen and (max-width: 390px){
+    header {
+        
+        flex-direction: column;
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    header nav ul{
+        text-align: center;
+        align-items: center;
+    }
+
+    .epidemia .small {
+        flex-basis: 100%;
+    }
+    
+    .mortes .grid, .epidemia .grid {
+        flex-direction: column;
+    }
+
+    .epidemia .large {
+        flex-basis: 100%;
+    }
+
+    footer{
+        background-position: center;
+    }
+    
+    footer ul {
+        gap: 40px;
+    }
+
+    .temporada h1 {
+        text-align: center;
+    }
+
+    .contato input {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 844px){
+    header nav ul {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .temporada {
+        min-height: 150vh;
+        background-position: center;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
